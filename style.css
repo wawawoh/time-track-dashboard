@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+  
+
+
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    min-height: 100vh;
+    font-family: rubik;
+    color:  white
+    /* do the flex on the media query */
+
+}
+main {
+    padding: 6rem 1rem;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 1rem
+}
+
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0 0 1rem 1rem;
+    max-height: 70%;
+
+    .inside-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0.8rem;
+
+        background-color: hsl(235, 45%, 61%);
+        padding: 1rem;
+    }
+    .img-container {
+        width: 20%;
+        border: white solid 2px;
+        border-radius: 3rem;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    button {
+        border: none;
+        background:none;
+        color: hsl(236, 100%, 87%);
+        font-size: 1.1rem;
+        cursor: pointer;
+
+
+    }
+    button:hover {
+        color: white;
+    }
+    
+   
+}
+button.active {
+    color: white;
+    font-weight: 400;
+}
+.cards {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+#Work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    background-color: hsl(15, 100%, 70%);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+#Work::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0%;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+
+#Play::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    background-color: hsl(195, 74%, 62%);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+#Play::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0%;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+
+#Study::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    background-color: hsl(348, 100%, 68%);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+#Study::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0%;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+
+#Exercise::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    background-color: hsl(145, 58%, 55%);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+#Exercise::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0%;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+
+#Social::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    background-color: hsl(264, 64%, 52%);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+#Social::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0%;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+
+.card-class::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    background-color: hsl(43, 84%, 65%);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+.card-class::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0%;
+    width: 100%;
+    height: 2.6rem; /* or however tall you want it */
+    
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    z-index: 1; /* Sit above content */
+}
+
+
+
+
+.card-class {
+    background-color:hsl(235, 46%, 20%) ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0 0 1rem 1rem;
+
+    
+
+    h2,.hour-container {
+        padding: 0.9rem 1rem;
+        position: relative;
+        z-index: 3;
+        
+    }
+    h2 {
+        padding-bottom: 0;
+        font-size: 1.2rem;
+        padding-top: 0;
+        margin-top:3rem;
+        font-weight: 200;
+    }
+    h3 {
+        font-size: 1.9rem;
+    }
+    .hour-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen AND (min-width:600px) {
+    main{
+        flex-direction: row;
+        height: 100%;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1fr 1fr;
+    }
+    .card-class {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    h2 {
+        text-align: center;
+    }
+    .hour-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 0;
+        h3 {
+            font-size: 1.2rem;
+            text-align: start;
+        }
+        p {
+            font-size: 0.6rem;
+        }
+    }
+    nav {
+        flex-direction: column;
+    }
+    .img-container {
+        align-self: flex-start;
+    }
+    .inside-profile {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 3rem 1rem;
+
+    }
+}
